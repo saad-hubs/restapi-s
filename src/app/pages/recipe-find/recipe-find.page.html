@@ -1,0 +1,13 @@
+  <ion-toolbar style="--background:#f5ddae">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cart" style="color:#C28B4E;"> </ion-back-button>
+    </ion-buttons>
+    <ion-title>Find Recipe</ion-title>
+  </ion-toolbar>
+
+
+<ion-content>
+  <ion-list *ngFor="let recipe of recipes">
+    <app-recipe-item [food]="recipe"></app-recipe-item>
+  </ion-list>
+</ion-content>

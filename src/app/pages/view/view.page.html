@@ -1,0 +1,27 @@
+<ion-toolbar style="--background:#f5ddae">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="menu/home" style="color:#C28B4E;"> </ion-back-button>
+  </ion-buttons>
+  <ion-title class="title" *ngIf="viewItems.length"
+    >Mostly viewed</ion-title>
+</ion-toolbar>
+
+<ion-content>
+
+
+  <br>
+  <ion-list *ngFor="let viewItem of viewItems">
+    <ion-item [routerLink]="['/recipe-detail',viewItem.foodId]">
+      <ion-label>
+        <b>{{viewItem.foodName}}</b>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+<!-- EMPTY CART -->
+<div class="empty-cart" *ngIf="!viewItems.length">
+  <ion-icon name="eye-off-outline"></ion-icon>
+  <p>No Views</p>
+</div>
+
+</ion-content>

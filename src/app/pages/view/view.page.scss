@@ -1,0 +1,22 @@
+ion-content {
+    --padding-start: 0.7rem;
+    --padding-end: 0.7rem;
+    --ion-background-color:#f5ddae;
+    .empty-cart {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+
+    
+        ion-icon {
+          font-size: 8rem;
+        }
+    
+        p {
+          font-size: 1.8rem;
+        }
+      }
+}

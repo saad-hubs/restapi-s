@@ -1,0 +1,57 @@
+<ion-content>  
+  <ion-grid >
+    <ion-row class="ion-text-center">
+      <ion-col>
+       <ion-img src="assets/images/CrummbzLogo.png"></ion-img> 
+      </ion-col>
+    </ion-row>
+<br>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="9">
+        <div>
+          <ion-item>
+            <ion-icon name="mail" size="20%" style="margin-right: 2% ;"></ion-icon>
+            <ion-input type="email" placeholder="Enter Email" [(ngModel)]="email" ></ion-input>
+          </ion-item>
+          <br/>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" >
+      <ion-col size="9">
+        <div>
+          <ion-item>
+            <ion-icon name="lock-closed" size="20%" style="margin-right: 2% ;"></ion-icon>
+            <ion-input type="password" placeholder="Enter Password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <br>
+        </div>
+      </ion-col>
+    </ion-row>
+<br>
+    <ion-row class="ion-text-center">
+      <ion-col>
+        <div>
+          <ion-button shape="round" style="--background:#F7CC77;color:black" size="100px" (click)="login()">LOG IN</ion-button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-text-center">
+      <ion-col>
+        <div>
+          <ion-button [routerLink]="['/signup']" style="--background:#C28B4E;color:black;" >CREATE ACCOUNT</ion-button>
+        <br>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>
